@@ -5,8 +5,20 @@ body{
     background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 a {
@@ -17,8 +29,36 @@ address {
     font-style: normal;
 }
 
-button {
-    font-family: inherit;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-subtitle{
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container{
+    display: flex;
+    align-self: center;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
 }
 
 .header-logo{
@@ -29,10 +69,16 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .header-logo-color{
     color: #2e2f42;
+}
+
+.header-menu-list{
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link{
@@ -45,6 +91,15 @@ button {
 .header-menu-link:hover,
 .header-menu-link:focus{
     color: #404bbf;
+}
+
+.header-contact{
+    margin-left: auto;
+}
+
+.header-contact-list{
+    display: flex;
+    gap: 40px;
 }
 
 .header-contact-link{
@@ -61,6 +116,8 @@ button {
 
 .title-section{
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .title-text{
@@ -70,9 +127,14 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .title-btn{
+    min-width: 169px;
+    height: 56px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -80,11 +142,29 @@ button {
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
 }
 
 .title-btn:hover,
 .title-btn:focus{
     background: #404bbf;
+}
+
+.advantages-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages-list{
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-item{
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-subtitle{
@@ -93,6 +173,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advantages-text{
@@ -105,6 +186,8 @@ button {
 
 .team-section{
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title{
@@ -115,10 +198,23 @@ button {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 .team-item{
     background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    height: 380px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-subtitle{
@@ -128,6 +224,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-text{
@@ -141,6 +238,8 @@ button {
 
 .portfolio-section{
     background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title{
@@ -151,10 +250,22 @@ button {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    justify-content: center;
 }
 
 .portfolio-item{
     background-color: #fcfcfc;
+    border: 1px solid #e7e9fc;
+    width: 360px;
+    height: 420px;
+    width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-subtitle{
@@ -163,6 +274,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    margin-left: 16px;
 }
 
 .portfolio-text{
@@ -171,10 +284,13 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-left: 16px;
 }
 
 .footer{
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo{
@@ -185,6 +301,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 100px;
 }
 
 .footer-logo-color{
@@ -192,9 +309,11 @@ button {
 }
 
 .footer-text{
+    max-width: 264px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 16px;
 }
