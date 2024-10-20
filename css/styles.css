@@ -115,13 +115,13 @@ img{
 
 .header-contact{
     margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-contact-list{
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-contact-link{
