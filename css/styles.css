@@ -61,6 +61,7 @@ img{
 .container-portfolio-subtitle{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .header{
@@ -319,6 +320,8 @@ img{
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color{
@@ -332,5 +335,4 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
 }
